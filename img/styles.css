@@ -1,0 +1,292 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: beige;
+  background-image: url(/Pagina\ web/img);
+}
+
+ol,
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+.arriba ul {
+  color: rgb(150, 18, 18);
+  display: flex;
+  gap: 1.6em;
+  padding-right: 1em;
+}
+header {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.section-1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5em;
+}
+
+.acerca-de h2 {
+  font-size: 4em;
+  border-radius: 1.5em;
+  display: flex;
+  justify-content: center;
+  border: 0.12em solid black;
+}
+.acerca-de p {
+  padding: 1.2em;
+  border: 0.3em solid black;
+  font-size: 1.5em;
+  border-radius: 1.5em;
+  display: flex;
+  justify-content: left;
+}
+
+header a i {
+  color: beige;
+  padding: 0.5em;
+  font-size: 4em;
+}
+
+.acerca-img img {
+  border-radius: 1.5em;
+  width: 20em;
+  height: 20em;
+  padding-left: 1em;
+}
+
+.seccion-2 img {
+  border-radius: 1.5em;
+  width: 100%;
+}
+ul a {
+  color: aqua;
+}
+
+
+
+.section-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5em;
+  gap: 5em;
+  flex-wrap: wrap;
+  padding-bottom: 0% ;
+}
+.cont-entrada {
+  width: 20em;
+  height: 600px;
+  margin: 1px;
+}
+.cont-entrada img {
+  width: 20em;
+  height: 20em;
+  border-radius: 1em;
+}
+.cont-entrada p {
+  width: 20em;
+  height: 8em;
+  margin-bottom: 0%;
+}
+.cont-entrada h4 {
+  font-size: 1.2em;
+  width: 20em;
+  height: 1em;
+}
+.section-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color:rgb(220, 222, 245) ;
+
+}
+
+.form-header {
+  text-align: center;
+  background-color: #f6f7f8;
+  border: 1px solid #d6d9dc;
+  border-radius: 3px;
+
+  width: 80%;
+  margin: 10px auto;
+  padding: 50px;
+}
+
+.form-header h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+#footer {
+  background-color: black;
+  width: 100%;
+  margin: 0;
+}
+
+#Redes h3 {
+  color: chocolate;
+  padding: 1.5em;
+  padding-bottom: 0%;
+ margin: 0;
+}
+#Redes ul {
+  padding: 1em;
+  color: aqua;
+  padding-left: 1.5em;
+  margin: 0;
+}
+
+/* ------------- Formulario ------------- */
+
+.formulario {
+  background-color: #f6f7f8;
+  border: 1px solid #d6d9dc;
+  border-radius: 3px;
+
+  width: 80%;
+  padding: 50px;
+  margin: 30px 0 40px 0;
+}
+/* ------------- Campos del Formulario ------------- */
+
+.form-row {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.form-row input[type="text"] ,.form-row input[type="email"]
+{
+  background-color: #bdbdbd;
+  border: 0;
+  border-radius: 6px;
+  width: 100%;
+  padding: 7px;
+  font-size: 14px;
+}
+
+.form-row label {
+  margin-bottom: 3px;
+  text-align: initial;
+}
+.form-row textarea {
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+
+
+  background-color: #bdbdbd;
+  border: 0;
+  border-radius: 6px;
+
+
+  min-height: 200px;
+  margin-bottom: 10px;
+  padding: 7px;
+  resize: none;
+
+
+  width: 100%;
+}
+.form-row button {
+  font-size: 16px;
+  font-weight: bold;
+
+
+  color: #ffffff;
+  background-color: #5995da;
+
+
+  border: none;
+  border-radius: 3px;
+
+
+  padding: 10px 40px;
+  cursor: pointer;
+}
+
+
+.form-row button:hover {
+  background-color: #76aeed;
+}
+
+
+.form-row button:active {
+  background-color: #407fc7;
+}
+#check{
+    display: none;
+}
+#alertas{
+  color: #ff0000;
+  font-size: 20px;
+  display: flex;
+
+  justify-content: center;
+}
+.checkbtn{
+    font-size: 30px;
+    color: aqua;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+    header{ background-color: blueviolet;
+}
+ .section-1{
+    display: inline;
+    justify-content: end;
+ }
+ .acerca-de p{
+justify-content: center;
+padding: 0.1;
+}  
+.acerca-img {
+    display: flex;
+justify-content: center;
+}
+.checkbtn{display: block;
+}
+/*.arriba ul {display: none;}*/
+#encabezado ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+
+    top: 80px;
+    left: 100%;
+    transition: all 0.5s;
+
+}
+#check:checked~ul{
+    left: 0;
+    display: block;
+}
+
+#encabezado nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+}
+#encabezado nav ul li a{
+    font-size: 30px;
+}
+#check:checked~ .checkbtn{
+    color: rgb(55, 49, 49);
+}
+}
