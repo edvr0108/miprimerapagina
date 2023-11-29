@@ -26,11 +26,14 @@ header {
   align-items: center;
   justify-content: space-between;
 }
-.greeting{
-  font-size: 4em;
-  display: flex;
-  justify-content: center;
-
+.checkbtn{
+  font-size: 40px;
+  color: beige;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
 }
 .section-1 {
   display: flex;
@@ -118,49 +121,28 @@ ul a {
 .form-header {
   text-align: center;
   background-color: #f6f7f8;
-  border: 1px solid #d6d9dc;
-  border-radius: 3px;
 
   width: 80%;
-  margin: 10px auto;
-  padding: 50px;
-}
 
+  padding: 50px;
+ 
+}
 .form-header h1 {
   font-size: 30px;
   margin-bottom: 20px;
 }
-#footer {
-  background-color: black;
-  width: 100%;
-  margin: 0;
-}
 
-#Redes h3 {
-  color: chocolate;
-  padding: 1.5em;
-  padding-bottom: 0%;
- margin: 0;
-}
-#Redes ul {
-  padding: 1em;
-  color: aqua;
-  padding-left: 1.5em;
-  margin: 0;
-}
 
-/* ------------- Formulario ------------- */
+
 
 .formulario {
   background-color: #f6f7f8;
-  border: 1px solid #d6d9dc;
-  border-radius: 3px;
-
+  
   width: 80%;
   padding: 50px;
-  margin: 30px 0 40px 0;
+  margin: 0;
 }
-/* ------------- Campos del Formulario ------------- */
+
 
 .form-row {
   margin-bottom: 40px;
@@ -238,20 +220,31 @@ ul a {
 
   justify-content: center;
 }
-.checkbtn{
-    font-size: 30px;
-    color: aqua;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
+
+#footer {
+  background-color: black;
+  width: 100%;
+  margin: 0;
 }
 
+#Redes h3 {
+  color: chocolate;
+  padding: 1.5em;
+  padding-bottom: 0%;
+ margin: 0;
+}
+#Redes ul {
+  padding: 1em;
+  color: aqua;
+  padding-left: 1.5em;
+  margin: 0;
+}
 
 @media (max-width: 768px) {
-    header{ background-color: blueviolet;
-}
+  header{
+    background-color: aqua(0, 0, 0);
+  }
+
  .section-1{
     display: inline;
     justify-content: end;
@@ -295,4 +288,6 @@ justify-content: center;
 #check:checked~ .checkbtn{
     color: rgb(55, 49, 49);
 }
+
 }
+
