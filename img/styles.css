@@ -26,6 +26,12 @@ header {
   align-items: center;
   justify-content: space-between;
 }
+.greeting{
+  font-size: 4em;
+  display: flex;
+  justify-content: center;
+
+}
 .section-1 {
   display: flex;
   justify-content: space-around;
